@@ -1,0 +1,6 @@
+.Home_container__inner select {
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 83%;
+}

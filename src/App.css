@@ -1,0 +1,34 @@
+.formPrimaryButton {
+    /* border: 1px solid red; */
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    padding: 0.5rem;
+
+    background: #0b57d0;
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.formPrimaryButton:hover {
+    transform: scaleX(1.1);
+    transition: 0.2s;
+}
+
+.formDeleteButton {
+    border: 1px solid red;
+    border-radius: 5px;
+    width: 50%;
+    padding: 0.5rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.formDeleteButton:hover {
+    transform: scaleX(1.1);
+    transition: 0.2s;
+}

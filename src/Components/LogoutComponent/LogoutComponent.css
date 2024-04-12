@@ -1,0 +1,18 @@
+.LogoutComponent {
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.LogoutComponent:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
