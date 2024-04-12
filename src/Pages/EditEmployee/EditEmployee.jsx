@@ -16,19 +16,21 @@ const EditEmployee = () => {
   })
 
   useEffect(() => {
-    viewIndiEmployeeApi(id).then(res => {
-      console.log(res.data.myEmployee);
-      setformData({
-        name: res.data.myEmployee.name,
-        department: res.data.myEmployee.department,
-        designation: res.data.myEmployee.designation,
-        mail: res.data.myEmployee.email,
-        mobileNumber: res.data.myEmployee.mobileNumber
+    viewIndiEmployeeApi(id)
+      .then((res) => {
+        console.log(res.data.myEmployee);
+        setformData({
+          name: res.data.myEmployee.name,
+          department: res.data.myEmployee.department,
+          designation: res.data.myEmployee.designation,
+          mail: res.data.myEmployee.email,
+          mobileNumber: res.data.myEmployee.mobileNumber,
+        });
       })
-    }).catch(err => {
-      console.log(err);
-    })
-  }, [1])
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [id]);
 
   const handleChange = (e) => {
     e.preventDefault();
